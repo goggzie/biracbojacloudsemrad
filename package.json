@@ -1,0 +1,13 @@
+{
+    "name": "biracbojacloudsemrad",
+    "version": "1.0.0",
+    "description": "JavaScript web aplikacija",
+    "main": "app.js",
+    "dependencies": {},
+    "scripts": {
+        "start": "node app.js"
+    },
+    "keywords": [],
+    "author": "Goran Veljkovic",
+    "license": "ISC"
+}

@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birač boja</title>
+    <link rel="stylesheet" href="colorjoe/colorjoe.css">
+    <script src="colorjoe/colorjoe.min.js"></script>
+    <style>
+        body {
+            background: antiquewhite;
+            margin: 20px;
+        }
+
+        .naslov {
+            max-width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 36;
+        }
+
+        p {
+            font-size: 18;
+        }
+
+        .paragraf {
+            max-width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .colorPicker {
+            background: none;
+            border: none;
+            margin: 0;
+        }
+
+        .colorPicker .oned {
+            margin-right: 0;
+        }
+
+        .container {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .config {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+
+        .config-naslov {
+            text-align: center;
+            padding: 15px 0;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .selected-color-text {
+            text-align: center;
+            font-family: monospace;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .selected-color,
+        .saved-color {
+            height: 15px;
+            border: 1px solid #eeeeee;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .saved-color:not(:last-of-type) {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="naslov">
+        <h1>Birač boja</h1>
+    </div>
+    <div class="paragraf">
+        <p>Ovo je JavaScript web aplikacija koja nam omogućava proizvoljan odabir boja.</p>
+    </div>
+    <br>
+    <div class="container">
+        <div class="colorjoe"></div>
+        <div class="config">
+            <div class="config-naslov">Izabrana boja:</div>
+            <div class="selected-color-text"></div>
+            <div class="selected-color"></div>
+            <div class="config-naslov">Sačuvane boje:</div>
+            <div class="saved-color"></div>
+            <div class="saved-color"></div>
+            <div class="saved-color"></div>
+            <div class="saved-color"></div>
+            <div class="saved-color"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
