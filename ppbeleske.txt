@@ -1,0 +1,9 @@
+kada zelim da procitam neku datoteku:
+	FILE* dat = fopen(naziv, "r");
+	fclose(dat); 	//svaka datoteka mora i da se zatvori
+
+kada je metoda za unos i imam puno poruka u primeru onda 
+koristim beskonacnu while petlju:
+	while(1) {
+		
+	}
